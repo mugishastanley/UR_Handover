@@ -1,0 +1,16 @@
+##Prediction:
+#Problem statement:
+We have a hand moving in a workspace. The robot has to predict when the hand stops and then plan the motion to the hand. 
+This is hand over point prediction problem.
+ To do:
+ Simulate hand motion: 
+ Write a publisher that publishes in a 3D poses area bounded by the robot workspace.
+ 	The points will be incremented by a hand motion model (The minimum jerk) at a frequency of 33 Hz. (model based)
+ 	A GP may be used to learn the model and predict the HOP (Data driven).
+ 
+A subscriber to the Estimated hand over point is used to plan the robot motion.	
+ 
+  
+ 
+
+
